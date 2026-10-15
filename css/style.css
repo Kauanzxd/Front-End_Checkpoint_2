@@ -5,11 +5,190 @@
      RM574720 - EDUARDO REGENOLD DA COSTA LIMA
 */
 
-:root{
+:root {
+     /* Paleta de cores */
+     --cor-preto: #212324;
+     --cor-branco: #ffffff;
+     --cor-cinza: #5a56569d;
+     --cor-dourado: #a78108;
+     --cor-fundo: #f7f7f7;
+     --cor-borda: #000000;
 
+     /* Espaçamentos */
+     --espaco-1: 0.5rem;
+     --espaco-2: 1rem;
+     --espaco-3: 1.5rem;
+     --espaco-4: 2rem;
+     --espaco-5: 3rem;
+     --espaco-6: 4.5rem;
+     --espaco-7: 6rem;
 }
 
-.btn-navegacao{
+
+/* RESET E ESTILOS BASE */
+
+/* Faz largura e altura incluírem padding e borda em todos os elementos */
+*,
+*::before,
+*::after {
+     box-sizing: border-box;
+}
+
+/* Remove margens padrão do navegador para controlar o espaçamento pelo CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+dl,
+dd,
+figure,
+fieldset {
+     margin: 0;
+}
+
+/* Imagens nunca ultrapassam a largura do elemento pai */
+img {
+     display: block;
+     max-width: 100%;
+     height: auto;
+}
+
+/* Listas sem marcador quando recebem a classe .lista-limpa */
+.lista-limpa {
+     padding: 0;
+     list-style: none;
+}
+
+
+/* UTILITÁRIOS DE LAYOUT */
+
+/* Centraliza o conteúdo e limita a largura máxima da página */
+.container {
+     width: 100%;
+     max-width: 944px;
+     margin-inline: auto;
+     padding-inline: var(--espaco-3);
+}
+
+/* Bloco vertical padrão: toda seção tem o mesmo respiro em cima e embaixo */
+.secao {
+     padding-block: var(--espaco-6);
+}
+
+/* fundo das paginas */
+.secao-fundo {
+     background-color: var(--cor-fundo)
+}
+
+
+/* Grades */
+.grade-2,
+.grade-3,
+.grade-texto-lateral {
+     display: grid;
+     gap: var(--espaco-4);
+}
+
+
+/* BOTÕES E LINKS */
+
+/* Base comum a todos os botões */
+.btn {
+     display: inline-block;
+     padding: 0.8rem 1.6rem;
+     border: 2px solid transparent;
+     border-radius: 999px;
+     font-size: 1.5rem;
+     font-weight: 600;
+     line-height: 1.2;
+     text-align: center;
+     text-decoration: none;
+     cursor: pointer;
+     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+
+/* CABEÇALHO E MENU PRINCIPAL: MESMO BLOCO EM TODAS AS PÁGINAS */
+
+/* Barra fixa no topo durante a rolagem */
+.cabecalho {
+     position: sticky;
+     top: 0;
+     z-index: 10;
+     background-color: var(--cor-preto);
+     border-bottom: 1px solid var(--cor-cinza);
+}
+
+/* Lista horizontal de links do menu */
+.menu-lista {
      display: flex;
-     
+     gap: var(--espaco-3);
+}
+
+.menu-cabecalho {
+     position: relative;
+     display: block;
+     padding-block: 1rem;
+     font-size: 1rem;
+     font-weight: 700;
+     color: var(--cor-dourado);
+     text-decoration: none;
+}
+
+.menu-cabecalho:hover {
+     color: var(--cor-branco);
+}
+
+
+/* RODAPÉ: MESMO BLOCO EM TODAS AS PÁGINAS */
+
+.rodape {
+     padding-block: var(--espaco-5) var(--espaco-4);
+     background-color: var(--cor-preto);
+     color: var(--cor-branco);
+     font-size: 1rem;
+}
+
+/* Colunas do rodapé */
+.rodape-conteudo {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 40px;
+     gap: var(--espaco-4);
+}
+
+.rodape-descricao {
+     max-width: 340px;
+     margin-top: var(--espaco-1);
+}
+
+.rodape-titulo {
+     margin-bottom: var(--espaco-2);
+     font-size: 1.125rem;
+     color: var(--cor-branco);
+}
+
+.rodape-lista li+li {
+     margin-top: 0.35rem;
+}
+
+.rodape a {
+     color: var(--cor-dourado);
+}
+
+.rodape a:hover {
+     color: var(--cor-branco);
+}
+
+/* Linha final com os créditos acadêmicos */
+.rodape-creditos {
+     margin-top: var(--espaco-4);
+     padding-top: var(--espaco-3);
+     border-top: 1px solid var(--cor-cinza);
+     font-size: 0.9375rem;
 }
