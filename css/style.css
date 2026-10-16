@@ -69,7 +69,7 @@ img {
 /* Centraliza o conteúdo e limita a largura máxima da página */
 .container {
      width: 100%;
-     max-width: 944px;
+     max-width: 1500px;
      margin-inline: auto;
      padding-inline: var(--espaco-3);
 }
@@ -111,6 +111,19 @@ img {
      transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
+/* definição da fonte padrão do site, os valores em rem saem daqui*/
+html {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 100%;
+     line-height: 1.5;
+     color: var(--cor-preto);
+}
+
+/* Mostra um contorno no link ao navegar com a tecla Tab */
+a:focus-visible {
+     outline: 3px solid var(--cor-dourado);
+     outline-offset: 3px;
+}
 
 /* CABEÇALHO E MENU PRINCIPAL: MESMO BLOCO EM TODAS AS PÁGINAS */
 
@@ -123,6 +136,26 @@ img {
      border-bottom: 1px solid var(--cor-cinza);
 }
 
+/* Logo à esquerda, menu à direita */
+.cabecalho-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--espaco-3);
+    min-height: 84px;
+}
+
+/* identificacao pagina: nome do projeto */
+.identificacao-pagina {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--cor-dourado);
+    text-decoration: none;
+}
+
 /* Lista horizontal de links do menu */
 .menu-lista {
      display: flex;
@@ -132,7 +165,7 @@ img {
 .menu-cabecalho {
      position: relative;
      display: block;
-     padding-block: 1rem;
+     padding-block: 0.5rem;
      font-size: 1rem;
      font-weight: 700;
      color: var(--cor-dourado);
@@ -158,19 +191,18 @@ img {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     padding: 20px 40px;
      gap: var(--espaco-4);
-}
-
-.rodape-descricao {
-     max-width: 340px;
-     margin-top: var(--espaco-1);
 }
 
 .rodape-titulo {
      margin-bottom: var(--espaco-2);
      font-size: 1.125rem;
      color: var(--cor-branco);
+}
+
+.rodape-descricao {
+     max-width: 340px;
+     margin-top: var(--espaco-1);
 }
 
 .rodape-lista li+li {
@@ -187,6 +219,9 @@ img {
 
 /* Linha final com os créditos acadêmicos */
 .rodape-creditos {
+     display: flex;
+     flex-direction: column;
+     text-align: center;
      margin-top: var(--espaco-4);
      padding-top: var(--espaco-3);
      border-top: 1px solid var(--cor-cinza);
@@ -194,21 +229,7 @@ img {
 }
 
 
-/* definição da fonte padrão do site, os valores em rem saem daqui*/
-html {
-     font-family: Arial, Helvetica, sans-serif;
-     font-size: 100%;
-     line-height: 1.5;
-     color: var(--cor-preto);
-}
-
-/* Mostra um contorno no link ao navegar com a tecla Tab */
-a:focus-visible {
-     outline: 3px solid var(--cor-dourado);
-     outline-offset: 3px;
-}
-
-/* PÁGINA INTEGRANTES */
+/* PÁGINA INTEGRANTES: INFORMAÇÕES SOBRE QUEM FEZ O PROJETO E LINKS SOCIAIS */
 
 /* Dois cards por linha */
 .grade-2 {
@@ -230,6 +251,7 @@ a:focus-visible {
      height: 160px;
      margin: 0 auto var(--espaco-2);
      border-radius: 50%;
+     border: solid 2px var(--cor-dourado);
      object-fit: cover;
 }
 
