@@ -192,3 +192,68 @@ img {
      border-top: 1px solid var(--cor-cinza);
      font-size: 0.9375rem;
 }
+
+
+/* definição da fonte padrão do site, os valores em rem saem daqui*/
+html {
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 100%;
+     line-height: 1.5;
+     color: var(--cor-preto);
+}
+
+/* Mostra um contorno no link ao navegar com a tecla Tab */
+a:focus-visible {
+     outline: 3px solid var(--cor-dourado);
+     outline-offset: 3px;
+}
+
+/* PÁGINA INTEGRANTES */
+
+/* Dois cards por linha */
+.grade-2 {
+     grid-template-columns: 1fr 1fr;
+     margin-top: var(--espaco-4);
+}
+
+.card-integrante {
+     padding: var(--espaco-3);
+     border: 1px solid var(--cor-borda);
+     border-radius: 12px;
+     background-color: var(--cor-branco);
+     text-align: center;
+}
+
+/* Fotos do mesmo tamanho e redondas */
+.foto-integrante {
+     width: 160px;
+     height: 160px;
+     margin: 0 auto var(--espaco-2);
+     border-radius: 50%;
+     object-fit: cover;
+}
+
+.card-integrante h2 {
+     margin-bottom: 0.5em;
+     font-size: 1.25rem;
+}
+
+.links-integrante {
+     margin-top: var(--espaco-2);
+}
+
+/* Espaço só entre os links */
+.links-integrante li + li {
+     margin-top: 0.5em;
+}
+
+.links-integrante a {
+     color: var(--cor-preto);
+     font-weight: 700;
+}
+
+/* Muda a cor e tira o sublinhado, para não depender só da cor */
+.links-integrante a:hover {
+     color: var(--cor-dourado);
+     text-decoration: none;
+}
