@@ -42,8 +42,83 @@
     </header>
 
     <!-- Conteudo Principal: Corpo da página, informações -->
-    <main>
+    <main id="conteudo" class="container">
+        <section class="secao" aria-labelledby="titulo-pagina">
+            <h1 id="titulo-pagina">Locais e serviços do campus</h1>
+            <p class="introducao">
+                Consulte os espaços disponíveis para estudo, alimentação, tecnologia e
+                atendimento. Cada cartão mostra a categoria, onde fica o local e uma
+                informação útil para a sua visita.
+            </p>
 
+            <!-- Cada local: nome, categoria, localização, informação útil, imagem e link -->
+            <ul class="grade">
+                <li>
+                    <article class="card">
+                        <img src="img/biblioteca.jpg" alt="Salão da biblioteca com estantes de livros e mesas de estudo">
+                        <div class="card-corpo">
+                            <span class="categoria">Estudo</span>
+                            <h2>Biblioteca Central</h2>
+                            <dl>
+                                <dt>Localização</dt>
+                                <dd>Bloco A, 2º andar</dd>
+                                <dt>Informação útil</dt>
+                                <dd>Aberta de segunda a sábado, das 8h às 22h.</dd>
+                            </dl>
+                            <a class="botao" href="detalhes.html#biblioteca">Ver detalhes da Biblioteca Central</a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="card">
+                        <img src="img/laboratorio.jpg" alt="Laboratório de informática com fileiras de computadores">
+                        <div class="card-corpo">
+                            <span class="categoria">Tecnologia</span>
+                            <h2>Laboratório de Informática</h2>
+                            <dl>
+                                <dt>Localização</dt>
+                                <dd>Bloco B, 3º andar, sala 305</dd>
+                                <dt>Informação útil</dt>
+                                <dd>Uso livre fora do horário de aula, com login do aluno.</dd>
+                            </dl>
+                            <a class="botao" href="detalhes.html#laboratorio">Ver detalhes do Laboratório de Informática</a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="card">
+                        <img src="img/restaurante.jpg" alt="Restaurante universitário com mesas e balcão de refeições">
+                        <div class="card-corpo">
+                            <span class="categoria">Alimentação</span>
+                            <h2>Restaurante Universitário</h2>
+                            <dl>
+                                <dt>Localização</dt>
+                                <dd>Térreo do Bloco C</dd>
+                                <dt>Informação útil</dt>
+                                <dd>Almoço das 11h às 14h e jantar das 18h às 20h30.</dd>
+                            </dl>
+                            <a class="botao" href="detalhes.html#restaurante">Ver detalhes do Restaurante Universitário</a>
+                        </div>
+                    </article>
+                </li>
+                <li>
+                    <article class="card">
+                        <img src="img/secretaria.jpg" alt="Balcão de atendimento da secretaria acadêmica com guichês numerados">
+                        <div class="card-corpo">
+                            <span class="categoria">Atendimento</span>
+                            <h2>Secretaria Acadêmica</h2>
+                            <dl>
+                                <dt>Localização</dt>
+                                <dd>Bloco A, térreo, ao lado da entrada principal</dd>
+                                <dt>Informação útil</dt>
+                                <dd>Emite declarações e históricos; leve um documento com foto.</dd>
+                            </dl>
+                            <a class="botao" href="detalhes.html#secretaria">Ver detalhes da Secretaria Acadêmica</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
     </main>
 
     <!-- Rodapé: Direitos... igual em todas as paginas -->
