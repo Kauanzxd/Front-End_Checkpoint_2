@@ -42,8 +42,87 @@
     </header>
 
     <!-- Conteudo Principal: Corpo da página, informações -->
-    <main>
+    <main id="conteudo" class="container">
+        <h1>Locais do Campus</h1>
+        <p class="introducao">
+            Veja os locais disponíveis no campus e suas características.
+        </p>
 
+        <!-- Local 1 -->
+        <article id="biblioteca" class="detalhe">
+            <h2>Biblioteca Central</h2>
+            <img src="img/biblioteca.jpg" alt="Salão da biblioteca com estantes de livros e mesas de estudo">
+            <dl>
+                <dt>Categoria</dt>
+                <dd>Estudo</dd>
+                <dt>Localização</dt>
+                <dd>Bloco A, 2º andar</dd>
+                <dt>Horário de funcionamento</dt>
+                <dd>Segunda a sexta, das 8h às 22h; sábado, das 8h às 14h</dd>
+            </dl>
+            <p>
+                Espaço silencioso para leitura e pesquisa, com acervo das bibliografias
+                básicas de todos os cursos e acesso às bases digitais da instituição.
+            </p>
+            <a href="./detalhes.html#biblioteca">Ver mais detalhes da Biblioteca Central</a>
+        </article>
+
+        <!-- Local 2 -->
+        <article id="laboratorio" class="detalhe">
+            <h2>Laboratório de Informática</h2>
+            <img src="img/laboratorio.jpg" alt="Laboratório de informática com fileiras de computadores">
+            <dl>
+                <dt>Categoria</dt>
+                <dd>Tecnologia</dd>
+                <dt>Localização</dt>
+                <dd>Bloco B, 3º andar, sala 305</dd>
+                <dt>Horário</dt>
+                <dd>Segunda a sexta, das 7h30 às 22h30</dd>
+            </dl>
+            <p>
+                Laboratório com 40 computadores preparados para as aulas práticas de
+                programação, banco de dados e desenvolvimento web.
+            </p>
+            <a href="./detalhes.html#laboratorio">Ver mais detalhes do Laboratório de Informática</a>
+        </article>
+
+         <!-- Local 3 -->
+        <article id="restaurante" class="detalhe">
+            <h2>Restaurante Universitário</h2>
+            <img src="img/restaurante.jpg" alt="Restaurante universitário com mesas e balcão de refeições">
+            <dl>
+                <dt>Categoria</dt>
+                <dd>Alimentação</dd>
+                <dt>Localização</dt>
+                <dd>Térreo do Bloco C</dd>
+                <dt>Horário</dt>
+                <dd>Almoço das 11h às 14h; jantar das 18h às 20h30</dd>
+            </dl>
+            <p>
+                Refeições completas a preço acessível, com cardápio semanal divulgado no
+                painel da entrada.
+            </p>
+            <a href="./detalhes.html#restaurante">Ver mais detalhes do Restaurante Universitário</a>
+        </article>
+
+        <!-- Local 4 -->
+        <article id="secretaria" class="detalhe">
+            <h2>Secretaria Acadêmica</h2>
+            <img src="img/secretaria.jpg" alt="Balcão de atendimento da secretaria acadêmica com guichês numerados">
+            <dl>
+                <dt>Categoria</dt>
+                <dd>Atendimento</dd>
+                <dt>Localização</dt>
+                <dd>Bloco A, térreo, ao lado da entrada principal</dd>
+                <dt>Horário</dt>
+                <dd>Segunda a sexta, das 9h às 21h</dd>
+            </dl>
+            <p>
+                Responsável pela vida acadêmica do aluno: matrículas, documentos e
+                solicitações formais.
+            </p>
+            <a href="./detalhes.html#secretaria">Ver mais detalhes da Secretaria Acadêmica</a>
+        </article>
     </main>
 
     <!-- Rodapé: Direitos... igual em todas as paginas -->
@@ -53,7 +132,7 @@
 
                 <!-- Coluna 1: apresentação curta do projeto -->
                 <div>
-                    <p class="rodape-descricao">Proposta de site para conhecer o campos, com finalidade avaliativa para
+                    <p class="rodape-descricao">Proposta de site para conhecer o campus, com finalidade avaliativa para
                         a matéria de Front-End CP2</p>
                 </div>
 
