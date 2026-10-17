@@ -20,199 +20,205 @@
 <body>
 
     <!-- Cabeçalho: identificação + menu de navegação (igual em todas as paginas)-->
-    <header class="cabecalho">
-        <div class="container cabecalho-conteudo">
+    <header>
+        <div class="cabecalho">
+            <div class="container cabecalho-conteudo">
 
-            <!-- Identificação da pagina em que está: leva de volta à página inicial -->
-            <a class="identificacao-pagina" href="./index.html">
-                <span>Detalhes | Conecta Campus</span>
-            </a>
+                <!-- Identificação da pagina em que está: leva de volta à página inicial -->
+                <a class="identificacao-pagina" href="./index.html">
+                    <span>Detalhes | Conecta Campus</span>
+                </a>
 
-            <!-- Cabeçalho: Menu de navegação -->
-            <nav aria-label="Menu principal">
-                <ul class="menu-lista lista-limpa">
-                    <li><a class="menu-cabecalho btn" href="./index.html">Home</a></li>
-                    <li><a class="menu-cabecalho btn" href="./detalhes.html">Detalhes</a></li>
-                    <li><a class="menu-cabecalho btn" href="./locais.html">Locais</a></li>
-                    <li><a class="menu-cabecalho btn" href="./integrantes.html">Integrantes</a></li>
-                </ul>
-            </nav>
-
+                <!-- Cabeçalho: Menu de navegação -->
+                <nav aria-label="Menu principal">
+                    <ul class="menu-lista lista-limpa">
+                        <li><a class="menu-cabecalho btn" href="./index.html">Home</a></li>
+                        <li><a class="menu-cabecalho btn" href="./detalhes.html">Detalhes</a></li>
+                        <li><a class="menu-cabecalho btn" href="./locais.html">Locais</a></li>
+                        <li><a class="menu-cabecalho btn" href="./integrantes.html">Integrantes</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <!-- Conteudo Principal: Corpo da página, informações -->
-    <main id="conteudo" class="container">
-        <h1>Detalhes dos locais</h1>
-        <p class="introducao">
-            Veja os serviços oferecidos e os recursos de acessibilidade de cada espaço
-            antes de ir até lá.
-        </p>
-
-        <!-- Atalhos internos para cada local detalhado -->
-        <nav class="atalhos" aria-labelledby="titulo-atalhos">
-            <h2 id="titulo-atalhos">Ir direto para um local</h2>
-            <ul>
-                <li><a href="#biblioteca">Biblioteca Central</a></li>
-                <li><a href="#laboratorio">Laboratório de Informática</a></li>
-                <li><a href="#restaurante">Restaurante Universitário</a></li>
-                <li><a href="#secretaria">Secretaria Acadêmica</a></li>
-            </ul>
-        </nav>
-
-        <!-- Local 1 -->
-        <article id="biblioteca" class="detalhe">
-            <h2>Biblioteca Central</h2>
-            <img src="img/biblioteca.jpg" alt="Salão da biblioteca com estantes de livros e mesas de estudo">
-            <dl>
-                <dt>Categoria</dt>
-                <dd>Estudo</dd>
-                <dt>Localização</dt>
-                <dd>Bloco A, 2º andar</dd>
-                <dt>Horário</dt>
-                <dd>Segunda a sexta, das 8h às 22h; sábado, das 8h às 14h</dd>
-            </dl>
-            <p>
-                Espaço silencioso para leitura e pesquisa, com acervo das bibliografias
-                básicas de todos os cursos e acesso às bases digitais da instituição.
+    <main>
+        <div id="conteudo" class="container">
+            <h1>Detalhes dos locais</h1>
+            <p class="introducao">
+                Veja os serviços oferecidos e os recursos de acessibilidade de cada espaço
+                antes de ir até lá.
             </p>
-            <h3>Serviços oferecidos</h3>
-            <ul>
-                <li>Empréstimo de livros por até 14 dias, com renovação on-line.</li>
-                <li>Reserva de salas de estudo em grupo para até seis pessoas.</li>
-                <li>Empréstimo de notebooks para uso dentro da biblioteca.</li>
-                <li>Orientação para normalização de trabalhos acadêmicos.</li>
-            </ul>
-            <h3>Recursos de acessibilidade</h3>
-            <ul>
-                <li>Elevador com acesso direto ao 2º andar.</li>
-                <li>Computador com leitor de tela e teclado ampliado.</li>
-                <li>Mesas com altura adequada para cadeira de rodas.</li>
-                <li>Piso tátil da entrada até o balcão de atendimento.</li>
-            </ul>
-            <a class="voltar" href="locais.html"> Voltar para a lista de locais</a>
-        </article>
 
-        <!-- Local 2 -->
-        <article id="laboratorio" class="detalhe">
-            <h2>Laboratório de Informática</h2>
-            <img src="img/laboratorio.jpg" alt="Laboratório de informática com fileiras de computadores">
-            <dl>
-                <dt>Categoria</dt>
-                <dd>Tecnologia</dd>
-                <dt>Localização</dt>
-                <dd>Bloco B, 3º andar, sala 305</dd>
-                <dt>Horário</dt>
-                <dd>Segunda a sexta, das 7h30 às 22h30</dd>
-            </dl>
-            <p>
-                Laboratório com 40 computadores preparados para as aulas práticas de
-                programação, banco de dados e desenvolvimento web.
-            </p>
-            <h3>Serviços oferecidos</h3>
-            <ul>
-                <li>Uso livre dos computadores fora do horário de aula.</li>
-                <li>Editores de código, Git e navegadores atualizados.</li>
-                <li>Impressão de trabalhos com a cota do aluno.</li>
-                <li>Monitoria às terças e quintas, das 18h às 19h.</li>
-            </ul>
-            <h3>Recursos de acessibilidade</h3>
-            <ul>
-                <li>Duas estações com leitor de tela e ampliador de tela.</li>
-                <li>Mesa regulável na primeira fileira, próxima à porta.</li>
-                <li>Corredores largos entre as bancadas.</li>
-            </ul>
-            <a class="voltar" href="locais.html"> Voltar para a lista de locais</a>
-        </article>
+            <!-- Atalhos internos para cada local detalhado -->
+            <nav class="atalhos" aria-labelledby="titulo-atalhos">
+                <h2 id="titulo-atalhos">Ir direto para um local</h2>
+                <ul>
+                    <li><a href="#biblioteca">Biblioteca Central</a></li>
+                    <li><a href="#laboratorio">Laboratório de Informática</a></li>
+                    <li><a href="#restaurante">Restaurante Universitário</a></li>
+                    <li><a href="#secretaria">Secretaria Acadêmica</a></li>
+                </ul>
+            </nav>
 
-        <!-- Local 3 -->
-        <article id="restaurante" class="detalhe">
-            <h2>Restaurante Universitário</h2>
-            <img src="img/restaurante.jpg" alt="Restaurante universitário com mesas e balcão de refeições">
-            <dl>
-                <dt>Categoria</dt>
-                <dd>Alimentação</dd>
-                <dt>Localização</dt>
-                <dd>Térreo do Bloco C</dd>
-                <dt>Horário</dt>
-                <dd>Almoço das 11h às 14h; jantar das 18h às 20h30</dd>
-            </dl>
-            <p>
-                Refeições completas a preço acessível, com cardápio semanal divulgado no
-                painel da entrada.
-            </p>
-            <h3>Serviços oferecidos</h3>
-            <ul>
-                <li>Prato do dia, opção vegetariana e sobremesa.</li>
-                <li>Pagamento com cartão do aluno, débito ou PIX.</li>
-                <li>Micro-ondas de uso livre para quem traz marmita.</li>
-            </ul>
-            <h3>Recursos de acessibilidade</h3>
-            <ul>
-                <li>Entrada sem degraus, com rampa e corrimão.</li>
-                <li>Balcão com trecho rebaixado para cadeira de rodas.</li>
-                <li>Cardápio impresso em fonte ampliada.</li>
-            </ul>
-            <a class="voltar" href="locais.html"> Voltar para a lista de locais</a>
-        </article>
+            <!-- Local 1 -->
+            <article id="biblioteca" class="detalhe">
+                <h2>Biblioteca Central</h2>
+                <img src="img/biblioteca.jpg" alt="Salão da biblioteca com estantes de livros e mesas de estudo">
+                <dl>
+                    <dt>Categoria</dt>
+                    <dd>Estudo</dd>
+                    <dt>Localização</dt>
+                    <dd>Bloco A, 2º andar</dd>
+                    <dt>Horário</dt>
+                    <dd>Segunda a sexta, das 8h às 22h; sábado, das 8h às 14h</dd>
+                </dl>
+                <p>
+                    Espaço silencioso para leitura e pesquisa, com acervo das bibliografias
+                    básicas de todos os cursos e acesso às bases digitais da instituição.
+                </p>
+                <h3>Serviços oferecidos</h3>
+                <ul>
+                    <li>Empréstimo de livros por até 14 dias, com renovação on-line.</li>
+                    <li>Reserva de salas de estudo em grupo para até seis pessoas.</li>
+                    <li>Empréstimo de notebooks para uso dentro da biblioteca.</li>
+                    <li>Orientação para normalização de trabalhos acadêmicos.</li>
+                </ul>
+                <h3>Recursos de acessibilidade</h3>
+                <ul>
+                    <li>Elevador com acesso direto ao 2º andar.</li>
+                    <li>Computador com leitor de tela e teclado ampliado.</li>
+                    <li>Mesas com altura adequada para cadeira de rodas.</li>
+                    <li>Piso tátil da entrada até o balcão de atendimento.</li>
+                </ul>
+                <a class="voltar" href="locais.html"> Voltar para a lista de locais</a>
+            </article>
 
-        <!-- Local 4 -->
-        <article id="secretaria" class="detalhe">
-            <h2>Secretaria Acadêmica</h2>
-            <img src="img/secretaria.jpg" alt="Balcão de atendimento da secretaria acadêmica com guichês numerados">
-            <dl>
-                <dt>Categoria</dt>
-                <dd>Atendimento</dd>
-                <dt>Localização</dt>
-                <dd>Bloco A, térreo, ao lado da entrada principal</dd>
-                <dt>Horário</dt>
-                <dd>Segunda a sexta, das 9h às 21h</dd>
-            </dl>
-            <p>
-                Responsável pela vida acadêmica do aluno: matrículas, documentos e
-                solicitações formais.
-            </p>
-            <h3>Serviços oferecidos</h3>
-            <ul>
-                <li>Emissão de declarações de matrícula e histórico escolar.</li>
-                <li>Trancamento, rematrícula e transferência de curso.</li>
-                <li>Abertura de requerimentos acadêmicos.</li>
-            </ul>
-            <h3>Recursos de acessibilidade</h3>
-            <ul>
-                <li>Guichê preferencial com senha própria.</li>
-                <li>Atendimento em Libras mediante agendamento.</li>
-                <li>Painel de senhas com aviso sonoro e visual.</li>
-            </ul>
-            <a class="voltar" href="locais.html"> Voltar para a lista de locais</a>
-        </article>
+            <!-- Local 2 -->
+            <article id="laboratorio" class="detalhe">
+                <h2>Laboratório de Informática</h2>
+                <img src="img/laboratorio.jpg" alt="Laboratório de informática com fileiras de computadores">
+                <dl>
+                    <dt>Categoria</dt>
+                    <dd>Tecnologia</dd>
+                    <dt>Localização</dt>
+                    <dd>Bloco B, 3º andar, sala 305</dd>
+                    <dt>Horário</dt>
+                    <dd>Segunda a sexta, das 7h30 às 22h30</dd>
+                </dl>
+                <p>
+                    Laboratório com 40 computadores preparados para as aulas práticas de
+                    programação, banco de dados e desenvolvimento web.
+                </p>
+                <h3>Serviços oferecidos</h3>
+                <ul>
+                    <li>Uso livre dos computadores fora do horário de aula.</li>
+                    <li>Editores de código, Git e navegadores atualizados.</li>
+                    <li>Impressão de trabalhos com a cota do aluno.</li>
+                    <li>Monitoria às terças e quintas, das 18h às 19h.</li>
+                </ul>
+                <h3>Recursos de acessibilidade</h3>
+                <ul>
+                    <li>Duas estações com leitor de tela e ampliador de tela.</li>
+                    <li>Mesa regulável na primeira fileira, próxima à porta.</li>
+                    <li>Corredores largos entre as bancadas.</li>
+                </ul>
+                <a class="voltar" href="locais.html"> Voltar para a lista de locais</a>
+            </article>
+
+            <!-- Local 3 -->
+            <article id="restaurante" class="detalhe">
+                <h2>Restaurante Universitário</h2>
+                <img src="img/restaurante.jpg" alt="Restaurante universitário com mesas e balcão de refeições">
+                <dl>
+                    <dt>Categoria</dt>
+                    <dd>Alimentação</dd>
+                    <dt>Localização</dt>
+                    <dd>Térreo do Bloco C</dd>
+                    <dt>Horário</dt>
+                    <dd>Almoço das 11h às 14h; jantar das 18h às 20h30</dd>
+                </dl>
+                <p>
+                    Refeições completas a preço acessível, com cardápio semanal divulgado no
+                    painel da entrada.
+                </p>
+                <h3>Serviços oferecidos</h3>
+                <ul>
+                    <li>Prato do dia, opção vegetariana e sobremesa.</li>
+                    <li>Pagamento com cartão do aluno, débito ou PIX.</li>
+                    <li>Micro-ondas de uso livre para quem traz marmita.</li>
+                </ul>
+                <h3>Recursos de acessibilidade</h3>
+                <ul>
+                    <li>Entrada sem degraus, com rampa e corrimão.</li>
+                    <li>Balcão com trecho rebaixado para cadeira de rodas.</li>
+                    <li>Cardápio impresso em fonte ampliada.</li>
+                </ul>
+                <a class="voltar" href="locais.html"> Voltar para a lista de locais</a>
+            </article>
+
+            <!-- Local 4 -->
+            <article id="secretaria" class="detalhe">
+                <h2>Secretaria Acadêmica</h2>
+                <img src="img/secretaria.jpg" alt="Balcão de atendimento da secretaria acadêmica com guichês numerados">
+                <dl>
+                    <dt>Categoria</dt>
+                    <dd>Atendimento</dd>
+                    <dt>Localização</dt>
+                    <dd>Bloco A, térreo, ao lado da entrada principal</dd>
+                    <dt>Horário</dt>
+                    <dd>Segunda a sexta, das 9h às 21h</dd>
+                </dl>
+                <p>
+                    Responsável pela vida acadêmica do aluno: matrículas, documentos e
+                    solicitações formais.
+                </p>
+                <h3>Serviços oferecidos</h3>
+                <ul>
+                    <li>Emissão de declarações de matrícula e histórico escolar.</li>
+                    <li>Trancamento, rematrícula e transferência de curso.</li>
+                    <li>Abertura de requerimentos acadêmicos.</li>
+                </ul>
+                <h3>Recursos de acessibilidade</h3>
+                <ul>
+                    <li>Guichê preferencial com senha própria.</li>
+                    <li>Atendimento em Libras mediante agendamento.</li>
+                    <li>Painel de senhas com aviso sonoro e visual.</li>
+                </ul>
+                <a class="voltar" href="locais.html"> Voltar para a lista de locais</a>
+            </article>
+        </div>
     </main>
 
     <!-- Rodapé: Direitos... igual em todas as paginas -->
-    <footer class="rodape">
-        <div class="container">
-            <div class="rodape-conteudo">
+    <footer>
+        <div class="rodape">
+            <div class="container">
+                <div class="rodape-conteudo">
 
-                <!-- Coluna 1: apresentação curta do projeto -->
-                <div>
-                    <p class="rodape-descricao">Proposta de site para conhecer o campos, com finalidade avaliativa para
-                        a matéria de Front-End CP2</p>
+                    <!-- Coluna 1: apresentação curta do projeto -->
+                    <div>
+                        <p class="rodape-descricao">Proposta de site para conhecer o campus, com finalidade avaliativa
+                            para
+                            a matéria de Front-End CP2</p>
+                    </div>
+
+                    <!-- Coluna 3: canais de contato da equipe -->
+                    <div>
+                        <h2 class="rodape-titulo">Visualização projeto</h2>
+                        <ul class="rodape-lista lista-limpa">
+                            <li><a href="https://github.com/Kauanzxd/Front-End_Checkpoint_2.git">Link do Repositório</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <!-- Coluna 3: canais de contato da equipe -->
-                <div>
-                    <h2 class="rodape-titulo">Visualização projeto</h2>
-                    <ul class="rodape-lista lista-limpa">
-                        <li><a href="https://github.com/Kauanzxd/Front-End_Checkpoint_2.git">Link do Repositório</a>
-                        </li>
-                    </ul>
-                </div>
+                <!-- Créditos acadêmicos -->
+                <p class="rodape-creditos">Projeto acadêmico da disciplina Front-End Design Engineering, FIAP | 2026 |
+                    1TDSPB.
+                </p>
             </div>
-
-            <!-- Créditos acadêmicos -->
-            <p class="rodape-creditos">Projeto acadêmico da disciplina Front-End Design Engineering, FIAP | 2026 |
-                1TDSPB.
-            </p>
         </div>
     </footer>
 
