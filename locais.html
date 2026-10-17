@@ -20,132 +20,176 @@
 <body>
 
     <!-- Cabeçalho: identificação + menu de navegação (igual em todas as paginas)-->
-    <header class="cabecalho">
-        <div class="container cabecalho-conteudo">
+    <header>
+        <div class="cabecalho">
+            <div class="container cabecalho-conteudo">
 
-            <!-- Identificação da pagina em que está: leva de volta à página inicial -->
-            <a class="identificacao-pagina" href="./index.html">
-                <span>Locais | Conecta Campus</span>
-            </a>
+                <!-- Identificação da pagina em que está: leva de volta à página inicial -->
+                <a class="identificacao-pagina" href="./index.html">
+                    <span>Locais | Conecta Campus</span>
+                </a>
 
-            <!-- Cabeçalho: Menu de navegação -->
-            <nav aria-label="Menu principal">
-                <ul class="menu-lista lista-limpa">
-                    <li><a class="menu-cabecalho btn" href="./index.html">Home</a></li>
-                    <li><a class="menu-cabecalho btn" href="./detalhes.html">Detalhes</a></li>
-                    <li><a class="menu-cabecalho btn" href="./locais.html">Locais</a></li>
-                    <li><a class="menu-cabecalho btn" href="./integrantes.html">Integrantes</a></li>
-                </ul>
-            </nav>
-
+                <!-- Cabeçalho: Menu de navegação -->
+                <nav aria-label="Menu principal">
+                    <ul class="menu-lista lista-limpa">
+                        <li><a class="menu-cabecalho btn" href="./index.html">Home</a></li>
+                        <li><a class="menu-cabecalho btn" href="./detalhes.html">Detalhes</a></li>
+                        <li><a class="menu-cabecalho btn" href="./locais.html">Locais</a></li>
+                        <li><a class="menu-cabecalho btn" href="./integrantes.html">Integrantes</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
     <!-- Conteudo Principal: Corpo da página, informações -->
-    <main id="conteudo" class="container">
-        <section class="secao" aria-labelledby="titulo-pagina">
-            <h1 id="titulo-pagina">Locais e serviços do campus</h1>
-            <p class="introducao-locais">
-                Consulte os espaços disponíveis para estudo, alimentação, tecnologia e
-                atendimento. Cada cartão mostra a categoria, onde fica o local e uma
-                informação útil para a sua visita.
-            </p>
+    <main>
+        <section class="secao secao-fundo" aria-labelledby="titulo-pagina">
+            <div class="container">
+                <div class="introducao-locais">
+                    <h1>Locais e serviços do campus</h1>
+                    <p>
+                        Consulte os espaços disponíveis para estudo, alimentação, tecnologia e
+                        atendimento. Cada cartão mostra a categoria, onde fica o local e uma
+                        informação útil para a sua visita.
+                    </p>
+                </div>
+                <!-- Cada local: nome, categoria, localização, informação útil, imagem e link -->
+                <div class="carrossel">
+                    <div class="slides">
 
-            <!-- Cada local: nome, categoria, localização, informação útil, imagem e link -->
-            <ul class="grade">
-                <li>
-                    <article class="card">
-                        <img src="img/biblioteca.jpg" alt="Salão da biblioteca com estantes de livros e mesas de estudo">
-                        <div class="card-corpo">
-                            <span class="categoria">Estudo</span>
-                            <h2>Biblioteca Central</h2>
-                            <dl>
-                                <dt>Localização</dt>
-                                <dd>Bloco A, 2º andar</dd>
-                                <dt>Informação útil</dt>
-                                <dd>Aberta de segunda a sábado, das 8h às 22h.</dd>
-                            </dl>
-                            <a class="botao" href="detalhes.html#biblioteca">Ver detalhes da Biblioteca Central</a>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <img src="img/laboratorio.jpg" alt="Laboratório de informática com fileiras de computadores">
-                        <div class="card-corpo">
-                            <span class="categoria">Tecnologia</span>
-                            <h2>Laboratório de Informática</h2>
-                            <dl>
-                                <dt>Localização</dt>
-                                <dd>Bloco B, 3º andar, sala 305</dd>
-                                <dt>Informação útil</dt>
-                                <dd>Uso livre fora do horário de aula, com login do aluno.</dd>
-                            </dl>
-                            <a class="botao" href="detalhes.html#laboratorio">Ver detalhes do Laboratório de Informática</a>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <img src="img/restaurante.jpg" alt="Restaurante universitário com mesas e balcão de refeições">
-                        <div class="card-corpo">
-                            <span class="categoria">Alimentação</span>
-                            <h2>Restaurante Universitário</h2>
-                            <dl>
-                                <dt>Localização</dt>
-                                <dd>Térreo do Bloco C</dd>
-                                <dt>Informação útil</dt>
-                                <dd>Almoço das 11h às 14h e jantar das 18h às 20h30.</dd>
-                            </dl>
-                            <a class="botao" href="detalhes.html#restaurante">Ver detalhes do Restaurante Universitário</a>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <img src="img/secretaria.jpg" alt="Balcão de atendimento da secretaria acadêmica com guichês numerados">
-                        <div class="card-corpo">
-                            <span class="categoria">Atendimento</span>
-                            <h2>Secretaria Acadêmica</h2>
-                            <dl>
-                                <dt>Localização</dt>
-                                <dd>Bloco A, térreo, ao lado da entrada principal</dd>
-                                <dt>Informação útil</dt>
-                                <dd>Emite declarações e históricos; leve um documento com foto.</dd>
-                            </dl>
-                            <a class="botao" href="detalhes.html#secretaria">Ver detalhes da Secretaria Acadêmica</a>
-                        </div>
-                    </article>
-                </li>
-            </ul>
+                        <article id="slide1" class="slide">
+                            <h3>Secretaria</h3>
+                            <img src="./img/img_secretaria_campus.png"
+                                alt="Balcão de atendimento da secretaria acadêmica com guichês numerados">
+                            <div class="info">
+                                <p>Responsável pela vida acadêmica do aluno: matrículas, documentos e solicitações
+                                    formais.</p>
+                                <ul>
+                                    <li><strong>Localização:</strong> Bloco A, térreo, ao lado da entrada principal</li>
+                                    <li><strong>Informação útil:</strong> Emite declarações e históricos; leve um
+                                        documento com foto.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="slide2" class="slide">
+                            <h3>Restaurante</h3>
+                            <img src="./img/img_restaurante_campus.png"
+                                alt="Restaurante universitário com mesas e balcão de refeições">
+                            <div class="info">
+                                <p>Refeições completas a preço acessível, com cardápio semanal divulgado no painel da
+                                    entrada.</p>
+                                <ul>
+                                    <li><strong>Localização: Térreo do Bloco C</strong></li>
+                                    <li><strong>Informação útil:</strong> Almoço das 11h às 14h e jantar das 18h às
+                                        20h30.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="slide3" class="slide">
+                            <h3>Laboratório</h3>
+                            <img src="./img/img_laboratorio-informatica_campus.png"
+                                alt="Laboratório de informática com fileiras de computadores">
+                            <div class="info">
+                                <p>Laboratório com 40 computadores preparados para as aulas práticas de programação,
+                                    banco de dados e desenvolvimento web.</p>
+                                <ul>
+                                    <li><strong>Localização:</strong> Bloco B, 3º andar, sala 305</li>
+                                    <li><strong>Informação útil:</strong> Uso livre fora do horário de aula, com login
+                                        do aluno.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="slide4" class="slide">
+                            <h3>Biblioteca</h3>
+                            <img src="./img/img_biblioteca_campus.png"
+                                alt="Salão da biblioteca com estantes de livros e mesas de estudo">
+                            <div class="info">
+                                <p>Espaço silencioso para leitura e pesquisa, com acervo das bibliografias básicas de
+                                    todos os cursos e acesso às bases digitais da instituição.</p>
+                                <ul>
+                                    <li><strong>Localização:</strong> Bloco A, 2º andar</li>
+                                    <li><strong>Informação útil:</strong> Aberta de segunda a sábado, das 8h às 22h.
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="slide5" class="slide">
+                            <h3>Auditório</h3>
+                            <img src="./img/img_auditorio_campus.png"
+                                alt="Auditório para realização de palestras com profissionais da área de tecnologia">
+                            <div class="info">
+                                <p>Espaço com capacidade para 100 pessoas, usado para palestras, aulas magnas,
+                                    apresentações de projetos e eventos acadêmicos abertos à comunidade.</p>
+                                <ul>
+                                    <li><strong>Localização:</strong> Bloco A, 3º andar</li>
+                                    <li><strong>Informação útil:</strong> Avisaremos por email quanto terá a proxima
+                                        palestra</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article id="slide6" class="slide">
+                            <h3>Área de lazer</h3>
+                            <img src="./img/img_area-de-lazer_campus.png"
+                                alt="Área de lazer para atividades extracurriculares e descanso entre as aulas">
+                            <div class="info">
+                                <p>Espaço aberto para descansar entre as aulas, conversar com os colegas e fazer
+                                    pequenas refeições, com áreas cobertas e ao ar livre.</p>
+                                <ul>
+                                    <li><strong>Localização:</strong> Térreo do Bloco C, ao lado do restaurante</li>
+                                    <li><strong>Informação útil:</strong> Utilização livre fora do horário de aula, até
+                                        as 20:00 da noite</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </div>
+
+                    <nav class="bolinhas">
+                        <a href="#slide1" aria-label="Slide 1"></a>
+                        <a href="#slide2" aria-label="Slide 2"></a>
+                        <a href="#slide3" aria-label="Slide 3"></a>
+                        <a href="#slide4" aria-label="Slide 4"></a>
+                        <a href="#slide5" aria-label="Slide 5"></a>
+                        <a href="#slide6" aria-label="Slide 6"></a>
+                    </nav>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Rodapé: Direitos... igual em todas as paginas -->
-    <footer class="rodape">
-        <div class="container">
-            <div class="rodape-conteudo">
+    <footer>
+        <div class="rodape">
+            <div class="container">
+                <div class="rodape-conteudo">
 
-                <!-- Coluna 1: apresentação curta do projeto -->
-                <div>
-                    <p class="rodape-descricao">Proposta de site para conhecer o campus, com finalidade avaliativa para
-                        a matéria de Front-End CP2</p>
+                    <!-- Coluna 1: apresentação curta do projeto -->
+                    <div>
+                        <p class="rodape-descricao">Proposta de site para conhecer o campus, com finalidade avaliativa
+                            para
+                            a matéria de Front-End CP2</p>
+                    </div>
+
+                    <!-- Coluna 3: canais de contato da equipe -->
+                    <div>
+                        <h2 class="rodape-titulo">Visualização projeto</h2>
+                        <ul class="rodape-lista lista-limpa">
+                            <li><a href="https://github.com/Kauanzxd/Front-End_Checkpoint_2.git">Link do Repositório</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <!-- Coluna 3: canais de contato da equipe -->
-                <div>
-                    <h2 class="rodape-titulo">Visualização projeto</h2>
-                    <ul class="rodape-lista lista-limpa">
-                        <li><a href="https://github.com/Kauanzxd/Front-End_Checkpoint_2.git">Link do Repositório</a>
-                        </li>
-                    </ul>
-                </div>
+                <!-- Créditos acadêmicos -->
+                <p class="rodape-creditos">Projeto acadêmico da disciplina Front-End Design Engineering, FIAP | 2026 |
+                    1TDSPB.
+                </p>
             </div>
-
-            <!-- Créditos acadêmicos -->
-            <p class="rodape-creditos">Projeto acadêmico da disciplina Front-End Design Engineering, FIAP | 2026 |
-                1TDSPB.
-            </p>
         </div>
     </footer>
 
