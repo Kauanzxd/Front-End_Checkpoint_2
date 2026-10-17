@@ -43,74 +43,71 @@
 
     <!-- Conteudo Principal: Corpo da página, informações -->
     <main>
-        <!-- Apresentação do projeto -->
-        <section id="hero" aria-labelledby="titulo-pagina">
-            <h1 id="titulo-pagina">Encontre o que você precisa no campus</h1>
-            <p class="introducao">
-                O Conecta Campus reúne, em um só lugar, os principais espaços e serviços
-                da faculdade. Aqui você descobre onde estudar, onde comer, onde resolver
-                questões acadêmicas e como cada local atende às necessidades de
-                acessibilidade.
-            </p>
-            <a class="botao" href="locais.html">Ver todos os locais do campus</a>
-        </section>
 
-        <!-- Finalidade do projeto -->
-        <section class="secao" aria-labelledby="titulo-finalidade">
-            <h2 id="titulo-finalidade">Para que serve o Conecta Campus</h2>
-            <p>
-                Quem chega ao campus pela primeira vez costuma perder tempo procurando
-                salas, horários e serviços. O projeto organiza essas informações para que
-                calouros, veteranos e visitantes consultem rapidamente:
-            </p>
-            <ul>
-                <li>a localização de cada espaço, com andar e bloco;</li>
-                <li>o horário de funcionamento e os serviços oferecidos;</li>
-                <li>os recursos de acessibilidade disponíveis em cada local.</li>
-            </ul>
-        </section>
-        <!-- Destaques: três locais em cartões -->
-        <section class="secao" aria-labelledby="titulo-destaques">
-            <h2 id="titulo-destaques">Locais em destaque</h2>
-            <ul class="grade">
-                <li>
-                    <article class="card">
-                        <img src="img/biblioteca.jpg"
-                            alt="Salão da biblioteca com estantes de livros e mesas de estudo">
-                        <div class="card-corpo">
+        <!-- Apresentação do projeto -->
+        <section class="secao-fundo">
+            <div class="hero">
+                <div class=" container hero-conteudo" aria-labelledby="titulo-pagina">
+                    <h1>Encontre o que você precisa no campus</h1>
+                    <p class="hero-descricao">
+                        O Conecta Campus reúne, em um só lugar, os principais espaços e serviços
+                        da faculdade. Aqui você descobre onde estudar, onde comer, onde resolver
+                        questões acadêmicas e como cada local atende às necessidades de
+                        acessibilidade.
+                    </p>
+                    <a class="btn" href="locais.html">Ver todos os locais do campus</a>
+                </div>
+            </div>
+
+            <!-- Finalidade do projeto -->
+            <article class="container secao">
+                <div class="finalidade-projeto" aria-labelledby="titulo-finalidade">
+                    <h2 id="titulo-finalidade">Para que serve o Conecta Campus</h2>
+                    <p>
+                        Quem chega ao campus pela primeira vez costuma perder tempo procurando
+                        salas, horários e serviços. O projeto organiza essas informações para que
+                        calouros, veteranos e visitantes consultem rapidamente:
+                    </p>
+                    <div>
+                        <ul>
+                            <li>a localização de cada espaço, com andar e bloco;</li>
+                            <li>o horário de funcionamento e os serviços oferecidos;</li>
+                            <li>os recursos de acessibilidade disponíveis em cada local.</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Destaques: três locais em cartões -->
+            <section class="container secao" aria-labelledby="titulo-destaques">
+                <h2 id="titulo-destaques">Locais em destaque</h2>
+                <div class="grade-destaques">
+                    <div class="card">
+                        <a class="card-link" href="detalhes.html#biblioteca">
                             <span class="categoria">Estudo</span>
                             <h3>Biblioteca Central</h3>
-                            <p>Acervo físico e digital, salas de estudo em grupo e empréstimo de notebooks.</p>
-                            <a class="botao botao-secundario" href="detalhes.html#biblioteca">Detalhes da Biblioteca
-                                Central</a>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <img src="img/laboratorio.jpg" alt="Laboratório de informática com fileiras de computadores">
-                        <div class="card-corpo">
+                            <p>Acervo físico e digital, salas de estudo em grupo e empréstimo de notebooks.
+                            </p>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="card-link" href="detalhes.html#laboratorio">
                             <span class="categoria">Tecnologia</span>
                             <h3>Laboratório de Informática</h3>
                             <p>Computadores com as ferramentas usadas nas aulas de desenvolvimento.</p>
-                            <a class="botao botao-secundario" href="detalhes.html#laboratorio">Detalhes do Laboratório
-                                de Informática</a>
-                        </div>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <img src="img/restaurante.jpg" alt="Restaurante universitário com mesas e balcão de refeições">
-                        <div class="card-corpo">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a class="card-link" href="detalhes.html#restaurante">
                             <span class="categoria">Alimentação</span>
                             <h3>Restaurante Universitário</h3>
-                            <p>Refeições completas, opções vegetarianas e cardápio semanal divulgado na entrada.</p>
-                            <a class="botao botao-secundario" href="detalhes.html#restaurante">Detalhes do Restaurante
-                                Universitário</a>
-                        </div>
-                    </article>
-                </li>
-            </ul>
+                            <p>Refeições completas, opções vegetarianas e cardápio semanal divulgado na
+                                entrada.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </section>
         </section>
     </main>
 
