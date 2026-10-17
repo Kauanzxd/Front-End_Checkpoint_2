@@ -376,30 +376,131 @@ html {
 
 /* PÁGINA DETALHES: INFORMAÇÕES SOBRE CADA LOCAL DO CAMPUS */
 
-/* divisão dos locais com os detalhes e imagens */
+.introducao-detalhes {
+  margin-bottom: var(--espaco-4);
+}
 
-#conteudo-detalhes {
-  padding-left: 18rem;
-  padding-right: 18rem;
+.introducao-detalhes h1 {
+  margin-bottom: var(--espaco-1);
+  font-size: 2.5rem;
+}
+
+.introducao-detalhes p {
+  max-width: 720px;
+  font-size: 1.125rem;
+}
+
+.atalhos-detalhes {
+  margin-bottom: var(--espaco-4);
+  padding: var(--espaco-3);
+  border: 1px solid var(--cor-cinza);
+  border-radius: var(--raio-medio);
+  background-color: var(--cor-branco);
+}
+
+.atalhos-detalhes h2 {
+  margin-bottom: var(--espaco-2);
+  font-size: 1.25rem;
+}
+
+.atalhos-detalhes ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+.atalhos-detalhes a {
+  color: var(--cor-dourado);
+  font-weight: 700;
+}
+
+.lista-detalhes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--espaco-4);
 }
 
 .detalhe {
+  overflow: hidden;
+  border: 1px solid var(--cor-cinza);
+  border-radius: var(--raio-medio);
   background-color: var(--cor-branco);
-  border: 1px solid var(--cor-borda);
-  border-radius: 12px;
-  padding: 2rem;
-  margin-bottom: 2.5rem;
 }
 
 .img-detalhe {
-  display: grid;
-  width: 70%;
-  height: auto;
-  border-radius: 12px;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
 }
 
-.margin-detalhes {
+.detalhe-conteudo {
+  padding: var(--espaco-3);
+}
+
+.detalhe-conteudo h2 {
+  margin-bottom: var(--espaco-2);
+  font-size: 1.5rem;
+}
+
+.dados-local {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: var(--espaco-2);
+}
+
+.dados-local dt {
+  font-weight: 700;
+}
+
+.dados-local dd {
+  margin: 0;
+}
+
+.detalhe-conteudo h3 {
   margin-top: var(--espaco-3);
+  margin-bottom: var(--espaco-1);
+  font-size: 1.125rem;
+}
+
+.detalhe-conteudo ul {
+  padding-left: 1.25rem;
+}
+
+.detalhe-conteudo li + li {
+  margin-top: 0.35rem;
+}
+
+.btn-detalhes {
+  margin-top: var(--espaco-3);
+  padding: 0.65rem 1.1rem;
+  background-color: var(--cor-dourado);
+  color: var(--cor-preto);
+  font-size: 1rem;
+}
+
+.btn-detalhes:hover {
+  background-color: var(--cor-preto);
+  color: var(--cor-branco);
+}
+
+@media (max-width: 900px) {
+  .lista-detalhes {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .introducao-detalhes h1 {
+    font-size: 2rem;
+  }
+
+  .detalhe-conteudo {
+    padding: var(--espaco-2);
+  }
+
+  .img-detalhe {
+    height: 190px;
+  }
 }
 
 /* CARROSEL DE IMAGENS COM OS LOCAIS DO CAMPUS */
