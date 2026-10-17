@@ -43,11 +43,10 @@
     </header>
 
     <!-- Conteudo Principal: Corpo da página, informações -->
-    <main id="conteudo-detalhes" ">
-        <section class=" secao">
-        <div class="container">
-            <main>
-                <div id="conteudo" class="container">
+    <main>
+        <section id="conteudo-detalhes">
+            <div class="container secao">
+                <div id="conteudo">
                     <h1>Detalhes dos locais</h1>
                     <p class="introducao">
                         Veja os serviços oferecidos e os recursos de acessibilidade de cada espaço
@@ -71,9 +70,9 @@
                     <article id="biblioteca" class="detalhe">
                         <h2>Biblioteca Central</h2>
                         <div class="img-detalhe">
-                            <img src="./img/img_biblioteca_campus.png" alt="Salão da biblioteca com estantes de livros e mesas de estudo">
+                            <img src="./img/img_biblioteca_campus.png"
+                                alt="Salão da biblioteca com estantes de livros e mesas de estudo">
                         </div>
-                        <img src="img/biblioteca.jpg" alt="Salão da biblioteca com estantes de livros e mesas de estudo">
                         <dl>
                             <dt>Categoria</dt>
                             <dd>Estudo</dd>
@@ -110,9 +109,9 @@
                     <article id="laboratorio" class="detalhe">
                         <h2>Laboratório de Informática</h2>
                         <div class="img-detalhe">
-                            <img src="./img/img_laboratorio-informatica_campus.png" alt="Laboratório de informática com fileiras de computadores">
+                            <img src="./img/img_laboratorio-informatica_campus.png"
+                                alt="Laboratório de informática com fileiras de computadores">
                         </div>
-                        <img src="img/laboratorio.jpg" alt="Laboratório de informática com fileiras de computadores">
                         <dl>
                             <dt>Categoria</dt>
                             <dd>Tecnologia</dd>
@@ -148,9 +147,9 @@
                     <article id="restaurante" class="detalhe">
                         <h2>Restaurante Universitário</h2>
                         <div class="img-detalhe">
-                            <img src="./img/img_restaurante_campus.png" alt="Restaurante universitário com mesas e balcão de refeições">
+                            <img src="./img/img_restaurante_campus.png"
+                                alt="Restaurante universitário com mesas e balcão de refeições">
                         </div>
-                        <img src="img/restaurante.jpg" alt="Restaurante universitário com mesas e balcão de refeições">
                         <dl>
                             <dt>Categoria</dt>
                             <dd>Alimentação</dd>
@@ -186,9 +185,9 @@
                     <article id="secretaria" class="detalhe">
                         <h2>Secretaria Acadêmica</h2>
                         <div class="img-detalhe">
-                            <img src="./img/img_secretaria_campus.png" alt="Balcão de atendimento da secretaria acadêmica com guichês numerados">
+                            <img src="./img/img_secretaria_campus.png"
+                                alt="Balcão de atendimento da secretaria acadêmica com guichês numerados">
                         </div>
-                        <img src="img/secretaria.jpg" alt="Balcão de atendimento da secretaria acadêmica com guichês numerados">
                         <dl>
                             <dt>Categoria</dt>
                             <dd>Atendimento</dd>
@@ -291,39 +290,46 @@
                         <section>
                             <a class="voltar" href="locais.html"> Voltar para a lista de locais</a>
                             </article>
-                    </div>
-            </main>
-
-            <!-- Rodapé: Direitos... igual em todas as paginas -->
-            <footer>
-                <div class="rodape">
-                    <div class="container">
-                        <div class="rodape-conteudo">
-
-                            <!-- Coluna 1: apresentação curta do projeto -->
-                            <div>
-                                <p class="rodape-descricao">Proposta de site para conhecer o campus, com finalidade avaliativa
-                                    para
-                                    a matéria de Front-End CP2</p>
-                            </div>
-
-                            <!-- Coluna 3: canais de contato da equipe -->
-                            <div>
-                                <h2 class="rodape-titulo">Visualização projeto</h2>
-                                <ul class="rodape-lista lista-limpa">
-                                    <li><a href="https://github.com/Kauanzxd/Front-End_Checkpoint_2.git">Link do Repositório</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Créditos acadêmicos -->
-                        <p class="rodape-creditos">Projeto acadêmico da disciplina Front-End Design Engineering, FIAP | 2026 |
-                            1TDSPB.
-                        </p>
+                        </section>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé: Direitos... igual em todas as paginas -->
+    <footer>
+        <div class="rodape">
+            <div class="container">
+                <div class="rodape-conteudo">
+
+                    <!-- Coluna 1: apresentação curta do projeto -->
+                    <div>
+                        <p class="rodape-descricao">Proposta de site para conhecer o campus, com finalidade
+                            avaliativa
+                            para
+                            a matéria de Front-End CP2</p>
+                    </div>
+
+                    <!-- Coluna 3: canais de contato da equipe -->
+                    <div>
+                        <h2 class="rodape-titulo">Visualização projeto</h2>
+                        <ul class="rodape-lista lista-limpa">
+                            <li><a href="https://github.com/Kauanzxd/Front-End_Checkpoint_2.git">Link do
+                                    Repositório</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Créditos acadêmicos -->
+                <p class="rodape-creditos">Projeto acadêmico da disciplina Front-End Design Engineering, FIAP |
+                    2026 |
+                    1TDSPB.
+                </p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
