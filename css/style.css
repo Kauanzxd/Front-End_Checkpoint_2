@@ -190,7 +190,7 @@ html {
      align-items: center;
      gap: 0.75rem;
      font-size: 1.25rem;
-     font-weight: 700;
+     font-weight: 700px;
      color: var(--cor-dourado);
      text-decoration: none;
 }
@@ -206,7 +206,7 @@ html {
      display: block;
      padding-block: 0.5rem;
      font-size: 1.2rem;
-     font-weight: 700;
+     font-weight: 700px;
      color: var(--cor-dourado);
      text-decoration: none;
 }
@@ -222,7 +222,7 @@ html {
      padding-block: var(--espaco-5) var(--espaco-4);
      background-color: var(--cor-preto);
      color: var(--cor-branco);
-     font-size: 1rem;
+     font-size: var(--espaco-2);
 }
 
 /* Colunas do rodapé */
@@ -235,7 +235,7 @@ html {
 
 .rodape-titulo {
      margin-bottom: var(--espaco-2);
-     font-size: 1.125rem;
+     font-size: var(--espaco-3);
      color: var(--cor-branco);
 }
 
@@ -264,7 +264,7 @@ html {
      margin-top: var(--espaco-4);
      padding-top: var(--espaco-3);
      border-top: 1px solid var(--cor-cinza);
-     font-size: 0.9375rem;
+     font-size: var(--espaco-2);
 }
 
 /* Pagina Principal: exposição dos principais locais e explicação do objetivo do site */
@@ -277,16 +277,16 @@ html {
 }
 
 #titulo-finalidade {
-     font-size: 2rem;
-     font-weight: 900;
+     font-size: var(--espaco-4);
+     font-weight: 900px;
 }
 
 #titulo-destaque {
-     font-size: 2rem;
-     font-weight: 900;
+     font-size: var(--espaco-4);
+     font-weight: 900px;
 }
 
-.grade-3{ 
+.grade-3 {
      grid-template-columns: 1fr 1fr;
      margin-top: var(--espaco-4);
 }
@@ -301,11 +301,11 @@ html {
 }
 
 .cartao h3 {
-    margin-bottom: var(--espaco-1);
+     margin-bottom: var(--espaco-1);
 }
 
 .cartao p {
-    color: var(--cor-dourado);
+     color: var(--cor-dourado);
 }
 
 .card-link {
@@ -316,9 +316,9 @@ html {
 }
 
 .card:hover {
-    border-color: var(--cor-preto);
-    background-color: var(--cor-branco);
-    color: var(--cor-dourado);
+     border-color: var(--cor-preto);
+     background-color: var(--cor-branco);
+     color: var(--cor-dourado);
 }
 
 /* PÁGINA INTEGRANTES: INFORMAÇÕES SOBRE QUEM FEZ O PROJETO E LINKS SOCIAIS */
@@ -349,7 +349,7 @@ html {
 }
 
 .card-integrante h2 {
-     margin-bottom: 0.5em;
+     margin-bottom: var(--espaco-1);
      font-size: 1.25rem;
 }
 
@@ -359,7 +359,7 @@ html {
 
 /* Espaço só entre os links */
 .links-integrante li+li {
-     margin-top: 0.5em;
+     margin-top: var(--espaco-1);
 }
 
 .links-integrante a {
@@ -371,4 +371,92 @@ html {
 .links-integrante a:hover {
      color: var(--cor-dourado);
      text-decoration: none;
+}
+
+/* CARROSEL DE IMAGENS COM OS LOCAIS DO CAMPUS */
+
+.introducao-locais {
+     display: flex;
+     flex-direction: column;
+     gap: var(--espaco-2);
+     padding: var(--espaco-5);
+}
+
+.carrossel {
+     max-width: 700px;
+     margin: 0 auto;
+}
+
+.slides {
+     display: flex;
+     overflow-x: auto;
+     scroll-snap-type: x mandatory;
+     scroll-behavior: smooth;
+     border-radius: 10px;
+}
+
+.slide {
+     flex: 0 0 100%;
+     scroll-snap-align: center;
+     display: flex;
+     flex-direction: column;
+     background: var(--cor-branco);
+}
+
+.slide h3 {
+     margin: 0;
+     padding: 16px 24px;
+     font-size: 1.5rem;
+     text-align: center;
+     background-color: var(--cor-preto);
+     color: var(--cor-dourado);
+}
+
+.slide img {
+     width: 100%;
+     height: 350px;
+     object-fit: cover;
+     display: block;
+     border-radius: 0px 0px 10px 10px;
+}
+
+.info {
+     padding: 20px 24px;
+}
+
+.info p {
+     margin: 0 0 12px;
+     line-height: 1.5;
+     color: var(--cor-preto);
+}
+
+.info ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     color: var(--cor-preto);
+}
+
+.info li {
+     padding: 6px 0;
+     border-top: 1px solid var(--cor-borda);
+}
+
+/* Bolinhas */
+.bolinhas {
+     display: flex;
+     justify-content: center;
+     gap: 8px;
+     margin-top: 12px;
+}
+
+.bolinhas a {
+     width: 12px;
+     height: 12px;
+     border-radius: 50%;
+     background-color: var(--cor-cinza);
+}
+
+.bolinhas a:hover {
+     background-color: var(--cor-preto);
 }
