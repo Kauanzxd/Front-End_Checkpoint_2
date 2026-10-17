@@ -136,6 +136,11 @@ a:focus-visible {
      border-bottom: 1px solid var(--cor-cinza);
 }
 
+/* Links com # (ex.: detalhes.html#biblioteca) param abaixo do cabeçalho fixo, sem cortar o título */
+html {
+     scroll-padding-top: 140px;
+}
+
 /* Logo à esquerda, menu à direita */
 .cabecalho-conteudo {
     display: flex;
