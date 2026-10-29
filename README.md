@@ -43,8 +43,8 @@ Os locais cobertos são: Biblioteca Central, Laboratório de Informática, Resta
 
 ## 🛠️ Tecnologias
 
-[![HTML5](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white)](https://github.com/Kauanzxd?tab=repositories&language=html)
-[![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white)](https://github.com/Kauanzxd?tab=repositories&language=css)
+[![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)](https://github.com/search?q=user%3AKauanzxd+topic%3Apython&type=repositories)
+[![CSS3](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white)](https://github.com/search?q=user%3AKauanzxd+topic%3Acss&type=repositories)
 
 ## 📂 Estrutura do projeto
 
